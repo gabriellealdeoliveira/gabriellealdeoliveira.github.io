@@ -1,3 +1,5 @@
+import { linguaAtual, traducoes } from "./traducao.js";
+
 // Hamburger Menu
 const menuToggle = document.getElementById("menu-toggle");
 const sidebar = document.querySelector(".sidebar");
@@ -33,40 +35,51 @@ const nextImage = document.getElementById("next-image");
 const etecImages = [
     {
         src: "arquivos/etec/foto-1.png",
-        caption: "Organizadores e participantes"
+        captionPt: "Organizadores e participantes",
+        captionEn: "Organizers and participants"
     }, {
         src: "arquivos/etec/foto-2.png",
-        caption: "Fliperama retrô"
+        captionPt: "Fliperama retrô",
+        captionEn: "Retro arcade machine",
     }, {
         src: "arquivos/etec/foto-3.png",
-        caption: "Fliperama retrô"
+        captionPt: "Fliperama retrô",
+        captionEn: "Retro arcade machine",
     }, {
         src: "arquivos/etec/foto-4.png",
-        caption: "Caixa de areia com realidade aumentada"
+        captionPt: "Caixa de areia com realidade aumentada",
+        captionEn: "Augmented reality sandbox"
     }, {
         src: "arquivos/etec/foto-5.png",
-        caption: "Quiz"
+        captionPt: "Quiz",
+        captionEn: "Quiz"
     }, {
         src: "arquivos/etec/foto-6.png",
-        caption: "Demonstração de drones"
+        captionPt: "Demonstração de drones",
+        captionEn: "Drone demonstration"
     }, {
         src: "arquivos/etec/foto-7.png",
-        caption: "Vulcão de papel machê"
+        captionPt: "Vulcão de papel machê",
+        captionEn: "Papier-mâché volcano"
     }, {
         src: "arquivos/etec/foto-8.png",
-        caption: "Constelação virtual"
+        captionPt: "Constelação virtual",
+        captionEn: "Virtual constellation"
     }, {
         src: "arquivos/etec/foto-9.png",
-        caption: "Impressões 3D"
+        captionPt: "Impressões 3D",
+        captionEn: "3D printing"
     }
 ];
 
 let currentImage = 0;
 
 function showImage(i) {
+    const image = etecImages[i];
     modalImage.src = etecImages[i].src;
-    modalImage.alt = etecImages[i].caption;
-    imageCaption.textContent = etecImages[i].caption;
+    const caption = linguaAtual === "pt" ? image.captionPt : image.captionEn;
+    modalImage.alt = caption;
+    imageCaption.textContent = caption;
     imageCounter.textContent = `${i+1} / ${etecImages.length}`;
 }
 
@@ -128,7 +141,7 @@ const resultado = document.getElementById("resultado-envio");
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    resultado.textContent = "Enviando mensagem...";
+    resultado.textContent = traducoes[linguaAtual].sending;
 
     const dados = Object.fromEntries(new FormData(form).entries());
 
@@ -156,14 +169,14 @@ form.addEventListener("submit", async (e) => {
         }
 
         if(resposta.ok && respostaJson.success) {
-            resultado.textContent = "Mensagem enviada com sucesso!";
+            resultado.textContent = traducoes[linguaAtual].success;
             form.reset();
         } else {
-            resultado.textContent = "Erro ao enviar mensagem. Por favor, tente novamente.";
+            resultado.textContent = traducoes[linguaAtual].error;
             console.error("Erro na resposta:", respostaJson);
         }
     } catch (error) {
         console.error("Error:", error);
-        resultado.textContent = "Erro ao enviar mensagem. Por favor, tente novamente.";
+        resultado.textContent = traducoes[linguaAtual].error;
     }
 });

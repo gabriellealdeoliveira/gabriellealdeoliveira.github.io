@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script type="module" src="js/script.js"></script>
 </head>
 
 <body>
@@ -28,21 +28,22 @@
                 </label>
                 <aside class="sidebar">
                     <nav>
-                        <li><a href="#main">Início</a></li>
-                        <li><a href="#about">Sobre Mim</a></li>
-                        <li><a href="#experiencia">Experiência</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contatos">Contatos</a></li>
+                        <li><a href="#main" data-i18n="home">Início</a></li>
+                        <li><a href="#about" data-i18n="about">Sobre Mim</a></li>
+                        <li><a href="#experiencia" data-i18n="experience">Experiência</a></li>
+                        <li><a href="#projetos" data-i18n="projects">Projetos</a></li>
+                        <li><a href="#contatos" data-i18n="contacts">Contatos</a></li>
                     </nav>
                 </aside>
                 <div class="logo"><a href="#"><h1>G.L.</h1></a></div>
                 <div class="links">
-                    <div class="link"><a href="#main">Início</a></div>
-                    <div class="link"><a href="#about">Sobre Mim</a></div>
-                    <div class="link"><a href="#experiencia">Experiência</a></div>
-                    <div class="link"><a href="#projetos">Projetos</a></div>
-                    <div class="link"><a href="#contatos">Contatos</a></div>
+                    <div class="link"><a href="#main" data-i18n="home">Início</a></div>
+                    <div class="link"><a href="#about" data-i18n="about">Sobre Mim</a></div>
+                    <div class="link"><a href="#experiencia" data-i18n="experience">Experiência</a></div>
+                    <div class="link"><a href="#projetos" data-i18n="projects">Projetos</a></div>
+                    <div class="link"><a href="#contatos" data-i18n="contacts">Contatos</a></div>
                 </div>
+                <button id="lang-switch">EN</button>
                 <label class="altera">
                     <input type="checkbox" checked id="alteraCor">
                     <div class="fundo">
@@ -56,10 +57,6 @@
                 </script>
             </div>
         </nav>
-        <!-- <div class="linguas">
-            <button id="eng"><a href="english.html"><img src="arquivos/imgs/eng.png" alt="Eng"></a></button>
-            <button id="port"><img src="arquivos/imgs/port.png" alt="Port"></button>
-        </div> -->
     </header>
 
     <section class="main" id="main">
@@ -79,12 +76,12 @@
 
     <section class="about" id="about">
         <div class="about-content">
-            <div class="titulo"><h1>Sobre Mim</h1></div>
-            <p>Sou um estudante de pós-graduação em Desenvolvimento Full-Stack, e sempre fui um entusiasta na área de 
+            <div class="titulo"><h1 data-i18n="about-title">Sobre Mim</h1></div>
+            <p data-i18n="about-desc-1">Sou um estudante de pós-graduação em Desenvolvimento Full-Stack, e sempre fui um entusiasta na área de 
                 tecnologia. Tenho um domínio maior na área de Frontend, trabalhando primariamente com Angular, mas 
                 ainda estou dando meus passos para ter conhecimento maior do Backend, estudando Spring Boot, Node.js e 
                 MongoDB.</p>
-            <p>Mesmo não tendo experiência suficiente na área de Frontend e, principalmente, no Backend e no Full-Stack, 
+            <p data-i18n="about-desc-2">Mesmo não tendo experiência suficiente na área de Frontend e, principalmente, no Backend e no Full-Stack, 
                 ainda busco encontrar desafios que me fazem evoluir e aprender coisas novas, contribuindo em projetos 
                 que tenham um impacto positivo na sociedade.</p>
         </div>
@@ -94,27 +91,27 @@
         </div>
     </section>
     <section class="skills" id="skills">
-        <div class="subtitulo"><h2>Habilidades</h2></div>
+        <div class="subtitulo"><h2 data-i18n="skills-title">Habilidades</h2></div>
         <div class="skills-container">
             <div class="field-group">
                 <div class="field-container">
-                    <h3 class="field-title">Desenvolvimento Frontend</h3>
+                    <h3 class="field-title" data-i18n="field-title-1">Desenvolvimento Frontend</h3>
                     <div class="field-skills">
-                        <div class="skill"><h4>HTML</h4><p>Experiente</p></div>
-                        <div class="skill"><h4>CSS</h4><p>Experiente</p></div>
-                        <div class="skill"><h4>JavaScript</h4><p>Básico</p></div>
-                        <div class="skill"><h4>React</h4><p>Básico</p></div>
-                        <div class="skill"><h4>Next.js</h4><p>Básico</p></div>
-                        <div class="skill"><h4>Angular</h4><p>Básico</p></div>
+                        <div class="skill"><h4>HTML</h4><p data-i18n="fe-skill-exp-1">Experiente</p></div>
+                        <div class="skill"><h4>CSS</h4><p data-i18n="fe-skill-exp-2">Experiente</p></div>
+                        <div class="skill"><h4>JavaScript</h4><p data-i18n="fe-skill-exp-3">Básico</p></div>
+                        <div class="skill"><h4>React</h4><p data-i18n="fe-skill-exp-4">Básico</p></div>
+                        <div class="skill"><h4>Next.js</h4><p data-i18n="fe-skill-exp-5">Básico</p></div>
+                        <div class="skill"><h4>Angular</h4><p data-i18n="fe-skill-exp-6">Básico</p></div>
                     </div>
                 </div>
                 <div class="field-container">
-                    <h3 class="field-title">Desenvolvimento Backend</h3>
+                    <h3 class="field-title" data-i18n="field-title-2">Desenvolvimento Backend</h3>
                     <div class="field-skills">
-                        <div class="skill"><h4>MySQL</h4><p>Intermediário</p></div>
-                        <div class="skill"><h4>Git</h4><p>Básico</p></div>
-                        <div class="skill"><h4>MongoDB</h4><p>Básico</p></div>
-                        <div class="skill"><h4>Node.js</h4><p>Básico</p></div>
+                        <div class="skill"><h4>MySQL</h4><p data-i18n="be-skill-exp-1">Intermediário</p></div>
+                        <div class="skill"><h4>Git</h4><p data-i18n="be-skill-exp-2">Básico</p></div>
+                        <div class="skill"><h4>MongoDB</h4><p data-i18n="be-skill-exp-3">Básico</p></div>
+                        <div class="skill"><h4>Node.js</h4><p data-i18n="be-skill-exp-4">Básico</p></div>
                     </div>
                 </div>
             </div>
@@ -122,57 +119,57 @@
     </section>
 
     <section class="formacao" id="formacao">
-        <div class="subtitulo"><h2>Formação</h2></div>
+        <div class="subtitulo"><h2 data-i18n="education-title">Formação</h2></div>
         <div class="formacao-container">
             <div class="formacao-item">
                 <h3>Descomplica Faculdade Digital</h3>
-                <span>Pós Graduação em Desenvolvimento Full Stack</span>
-                <p>Fevereiro de 2026 - cursando</p>
-                <p>Ensino a distância</p>
+                <span data-i18n="education-course-1">Pós Graduação em Desenvolvimento Full Stack</span>
+                <p data-i18n="education-period-1">Fevereiro de 2026 - cursando</p>
+                <p data-i18n="education-location-1">Ensino a distância</p>
             </div>
             <div class="formacao-item">
-                <h3>Instituto Federal do Triângulo Mineiro (IFTM) - Campus Paracatu</h3>
-                <span>Graduação em Análise e Desenvolvimento de Sistemas</span>
-                <p>Março de 2022 - Dezembro de 2025</p>
-                <p>Paracatu, Brasil</p>
+                <h3 data-i18n="education-school-2">Instituto Federal do Triângulo Mineiro (IFTM) - Campus Paracatu</h3>
+                <span data-i18n="education-course-2">Graduação em Análise e Desenvolvimento de Sistemas</span>
+                <p data-i18n="education-period-2">Março de 2022 - Dezembro de 2025</p>
+                <p data-i18n="education-location-2">Paracatu, Brasil</p>
             </div>
             <div class="formacao-item">
                 <h3>Escola Técnica Multi Tech</h3>
-                <span>Técnico em Manutenção e Suporte em Informática</span>
-                <p>Junho de 2023 - Outubro de 2024</p>
-                <p>Paracatu, Brasil</p>
+                <span data-i18n="education-course-3">Técnico em Manutenção e Suporte em Informática</span>
+                <p data-i18n="education-period-3">Junho de 2023 - Outubro de 2024</p>
+                <p data-i18n="education-location-3">Paracatu, Brasil</p>
             </div>
         </div>
     </section>
     <section class="experiencia" id="experiencia">
-        <div class="titulo"><h1>Experiência</h1></div>
+        <div class="titulo"><h1 data-i18n="experience-title">Experiência</h1></div>
         <div class="exp">
             <div class="exp-card">
                 <div class="exp-content">
                     <div class="exp-main">
                         <h3>Escola Técnica Multi Tech</h3>
-                        <span>Estagiário</span>
-                        <p>Setembro de 2025 - Outubro de 2025</p>
-                        <p>Paracatu, Brasil</p>
+                        <span data-i18n="exp-function-1">Estagiário</span>
+                        <p data-i18n="exp-period-1">Setembro de 2025 - Outubro de 2025</p>
+                        <p data-i18n="exp-location-1">Paracatu, Brasil</p>
                         <ul>
-                            <li>Supervisionamento das operações diárias do laboratório.</li>
-                            <li>Prestação de suporte técnico aos alunos.</li>
-                            <li>Gerenciamento, manutenção e instalação de drivers nos computadores.</li>
-                            <li>Aplicação de imagens do sistema.</li>
-                            <li>Migração dos serviços.</li>
-                            <li>Configuração de rede da nova sede da Multi-Tech.</li>
-                            <li>Testes de funcionalidade dos computadores.</li>
-                            <li>Monitoramento e otimização da rede.</li>
+                            <li data-i18n="exp-comp-1-task-1">Supervisionamento das operações diárias do laboratório.</li>
+                            <li data-i18n="exp-comp-1-task-2">Prestação de suporte técnico aos alunos.</li>
+                            <li data-i18n="exp-comp-1-task-3">Gerenciamento, manutenção e instalação de drivers nos computadores.</li>
+                            <li data-i18n="exp-comp-1-task-4">Aplicação de imagens do sistema.</li>
+                            <li data-i18n="exp-comp-1-task-5">Migração dos serviços.</li>
+                            <li data-i18n="exp-comp-1-task-6">Configuração de rede da nova sede da Multi Tech.</li>
+                            <li data-i18n="exp-comp-1-task-7">Testes de funcionalidade dos computadores.</li>
+                            <li data-i18n="exp-comp-1-task-8">Monitoramento e otimização da rede.</li>
                         </ul>
                     </div>
                     <div class="exp-main">
                         <h3>Superintendência Regional de Ensino de Paracatu</h3>
-                        <span>Estagiário</span>
-                        <p>Junho de 2025 - Setembro de 2025</p>
-                        <p>Paracatu, Brasil</p>
+                        <span data-i18n="exp-function-2">Estagiário</span>
+                        <p data-i18n="exp-period-2">Junho de 2025 - Setembro de 2025</p>
+                        <p data-i18n="exp-location-2">Paracatu, Brasil</p>
                         <ul>
-                            <li>Supervisionamento das operações diárias do Núcleo de Tecnologia Educacional.</li>
-                            <li>Prestação de suporte técnico a funcionários de diferentes áreas da Superintendência 
+                            <li data-i18n="exp-comp-2-task-1">Supervisionamento das operações diárias do Núcleo de Tecnologia Educacional.</li>
+                            <li data-i18n="exp-comp-2-task-2">Prestação de suporte técnico a funcionários de diferentes áreas da Superintendência 
                                 e diretores de várias escolas públicas de Paracatu e região.</li>
                         </ul>
                     </div>
@@ -181,20 +178,20 @@
         </div>
     </section>
     <section class="projetos" id="projetos">
-        <div class="titulo"><h1>Projetos</h1></div>
+        <div class="titulo"><h1 data-i18n="projects-title">Projetos</h1></div>
         <div class="project-container">
             <div class="project-list">
                 <div>
-                    <h2>Portfólio</h2>
-                    <p>Este portfólio foi criado utilizando HTML, CSS e JavaScript entre Junho e Julho de 2023 como um 
+                    <h2 data-i18n="project-1-title">Portfólio</h2>
+                    <p data-i18n="project-1-desc">Este portfólio foi criado utilizando HTML, CSS e JavaScript entre Junho e Julho de 2023 como um 
                         trabalho da faculdade. Entre Setembro e Novembro de 2026, o portfólio ganhou uma nova identidade 
                         visual, incluindo uma nova palheta de cores, fontes de texto diferenciadas e funcionalidades 
                         modernas, que mostram uma vasta variedade de conhecimentos das linguagens básicas da web.</p>
-                    <a href="https://theloyal1.github.io/">Saiba Mais</a>
+                    <a href="https://theloyal1.github.io/" data-i18n="learn-more-1">Saiba Mais</a>
                 </div>
                 <div>
                     <h2>Protege Meu Cerrado</h2>
-                    <p>No final de Outubro de 2024, no último período da faculdade, foi proposto o desenvolvimento de 
+                    <p data-i18n="project-2-desc">No final de Outubro de 2024, no último período da faculdade, foi proposto o desenvolvimento de 
                         uma plataforma gratuita que permite o relato de problemas ambientais no Cerrado em tempo real e 
                         notificar automaticamente as autoridades competentes. Com esta proposta, o Protege Meu Cerrado 
                         foi desenvolvido pela turma do meu curso entre Novembro de 2024 e Janeiro de 2025 - na qual fui 
@@ -203,17 +200,17 @@
                         Polícia Militar Ambiental, das secretarias municipais e do IFTM - Campus Paracatu. Em Novembro do 
                         mesmo ano, houve uma proposta para eu ser um sócio técnico do Protege Meu Cerrado, mas que foi 
                         recusada por razões contratuais.</p>
-                    <a href="https://lnkd.in/p/dDvN5_ir/">Saiba Mais</a>
-                    <a href="https://youtu.be/onYi_cTVtEM?si=IGvHBInmXwxkOhdW">Matéria da TV Cultura Paracatu</a>
+                    <a href="https://lnkd.in/p/dDvN5_ir/" data-i18n="learn-more-2">Saiba Mais</a>
+                    <a href="https://youtu.be/onYi_cTVtEM?si=IGvHBInmXwxkOhdW" data-i18n="news-report">Matéria da TV Cultura Paracatu</a>
                 </div>
                 <div>
                     <h2>2º Encontro Tecnólogico (ETEC)</h2>
-                    <p>O 2º Encontro Tecnológico (ETEC) foi um evento de ciências e tecnologia realizado no dia 
+                    <p data-i18n="project-3-desc">O 2º Encontro Tecnológico (ETEC) foi um evento de ciências e tecnologia realizado no dia 
                         15 de Junho de 2023, no IFTM - Campus Paracatu - Unidade Remota João Pinheiro. Fui um dos 
                         organizadores e participantes juntamente com alunos do ensino médio, apresentando um fliperama 
                         portátil retrô. Houve também apresentações de vários outros projetos, incluindo uma caixa de 
                         areia com realidade aumentada, demonstração de drones e um vulcão de papel machê.</p>
-                    <a href="#etec-modal" id="etec-link">Saiba Mais</a>
+                    <a href="#etec-modal" id="etec-link" data-i18n="learn-more-3">Saiba Mais</a>
                 </div>
             </div>
         </div>
@@ -224,28 +221,28 @@
                 <img src="arquivos/etec/foto-1.png" id="modal-image" alt="Organizadores e participantes">
                 <button class="next-image" id="next-image">&#10095;</button>
                 <div class="slide-info">
-                    <p id="image-caption">Organizadores e participantes</p>
+                    <p id="image-caption" data-i18n="etec-caption-1">Organizadores e participantes</p>
                     <span id="image-counter"></span>
                 </div>
             </div>
         </div>
     </section>
     <section class="contatos" id="contatos">
-        <div class="titulo"><h1>Contatos</h1></div>
+        <div class="titulo"><h1 data-i18n="contacts-title">Contatos</h1></div>
         <form action="https://formsubmit.co/gabriel.leal.oliveira2004@gmail.com" method="POST">
             <input type="hidden" name="access_key" value="e8096092-f167-4602-8d08-9c09fed23c62">
             <input type="hidden" name="subject" value="Nova mensagem pelo portfólio!">
             <input type="hidden" name="from_name" value="Portfólio - Gabriel Leal de Oliveira">
             <div class="input-box">
-                <input type="text" name="nome" placeholder="Nome completo" required>
-                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="nome" placeholder="Nome completo" data-i18n-placeholder="name" required>
+                <input type="email" name="email" placeholder="Email" data-i18n-placeholder="email" required>
             </div>
             <div class="input-box">
-                <input type="tel" name="telefone" placeholder="Telefone" required>
-                <input type="text" name="assunto" placeholder="Assunto" required>
+                <input type="tel" name="telefone" placeholder="Telefone" data-i18n-placeholder="phone" required>
+                <input type="text" name="assunto" placeholder="Assunto" data-i18n-placeholder="subject" required>
             </div>
-            <textarea name="mensagem" placeholder="Sua mensagem" id="" cols="30" rows="10" required></textarea>
-            <input type="submit" value="Enviar mensagem" class="btn">
+            <textarea name="mensagem" placeholder="Sua mensagem" data-i18n-placeholder="message" id="" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Enviar mensagem" data-i18n-value="send" class="btn">
             <p id="resultado-envio"></p>
         </form>
     </section>
