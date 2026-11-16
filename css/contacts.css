@@ -85,3 +85,11 @@ body.dark .contatos {
         padding: 0.8rem;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .contatos form .btn {
+        padding: 0.5rem 1.7rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+    }
+}
