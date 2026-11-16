@@ -23,9 +23,9 @@ export const traducoes = {
 
         "field-title-2": "Desenvolvimento Backend",
         "be-skill-exp-1": "Intermediário",
-        "be-skill-exp-1": "Básico",
-        "be-skill-exp-1": "Básico",
-        "be-skill-exp-1": "Básico",
+        "be-skill-exp-2": "Básico",
+        "be-skill-exp-3": "Básico",
+        "be-skill-exp-4": "Básico",
 
         "education-title": "Formação",
         
@@ -114,9 +114,9 @@ export const traducoes = {
 
         "field-title-2": "Backend Development",
         "be-skill-exp-1": "Intermediate",
-        "be-skill-exp-1": "Basic",
-        "be-skill-exp-1": "Basic",
-        "be-skill-exp-1": "Basic",
+        "be-skill-exp-2": "Basic",
+        "be-skill-exp-3": "Basic",
+        "be-skill-exp-4": "Basic",
 
         "education-title": "Education",
         
@@ -163,7 +163,7 @@ export const traducoes = {
         "learn-more-2": "Learn More",
         "news-report": "TV Cultura Paracatu news report (in Portuguese)",
 
-        "project-3-desc": "The 2nd Technological Meeting (Encontro Tecnológico / ETEC) was a science and technology event held on June 15, 2023, at the IFTM Paracatu Campus – João Pinheiro Remote Unit. I served as one of the organizers and participants, working alongside high school students to showcase a portable retro arcade machine. Other projects were also presented, including an augmented reality sandbox, a drone demonstration, and a papier-mâché volcano.",
+        "project-3-desc": "The 2nd Technological Meeting (Encontro Tecnológico / ETEC) was a science and technology event held on June 15, 2023, at the IFTM Paracatu Campus – João Pinheiro Remote Unit. I served as one of the organizers and participants, working alongside high school students, to showcase a portable retro arcade machine. Other projects were also presented, including an augmented reality sandbox, a drone demonstration, and a papier-mâché volcano.",
         "learn-more-3": "Learn More",
         "etec-caption-1": "Organizers and participants",
 
