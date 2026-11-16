@@ -108,6 +108,24 @@ section li {
     transform: translateY(-3px);
 }
 
+#lang-switch {
+    position: relative;
+    padding: 10px 22px;
+    background: #d7263d;
+    border-radius: 6px;
+    color: #e9f1f8;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+#lang-switch:hover {
+    background: #F4000C;
+}
+
 @media screen and (max-width: 960px) {
     .formacao-container {
         flex-direction: column;

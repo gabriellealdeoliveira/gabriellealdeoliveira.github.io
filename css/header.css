@@ -7,29 +7,3 @@ header {
     flex-direction: column;
     width: 100%;
 }
-
- /*
-header .linguas {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-}
-
-header .linguas button {
-    border: 0;
-    background-color: transparent;
-}
-
-header .linguas #eng {
-    cursor: pointer;
-}
-
-header .linguas #port {
-    opacity: 0.2;
-}
-
-header .linguas #eng:hover {
-    opacity: 0.1;
-    transition: 0.3s;
-}
-*/
