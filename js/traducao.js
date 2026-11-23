@@ -33,8 +33,8 @@ export const traducoes = {
         "education-period-1": "Fevereiro de 2026 - cursando",
         "education-location-1": "Ensino a distância",
 
-        "education-school-2": "Instituto Federal do Triângulo Mineiro (IFTM) - Campus Paracatu",
         "education-course-2": "Graduação em Análise e Desenvolvimento de Sistemas",
+        "education-school-2": "Instituto Federal do Triângulo Mineiro (IFTM) - Campus Paracatu",
         "education-period-2": "Março de 2022 - Dezembro de 2025",
         "education-location-2": "Paracatu, Brasil",
 
