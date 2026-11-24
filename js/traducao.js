@@ -6,6 +6,8 @@ export const traducoes = {
         projects: "Projetos",
         contacts: "Contatos",
 
+        "download": "Baixar CV",
+
         "about-title": "Sobre Mim",
 
         "about-desc-1": "Sou um estudante de pós-graduação em Desenvolvimento Full-Stack, e sempre fui um entusiasta na área de tecnologia. Tenho um domínio maior na área de Frontend, trabalhando primariamente com Angular, mas ainda estou dando meus passos para ter conhecimento maior do Backend, estudando Spring Boot, Node.js e MongoDB.",
@@ -97,6 +99,8 @@ export const traducoes = {
         projects: "Projects",
         contacts: "Contacts",
 
+        "download": "Download CV",
+
         "about-title": "About Me",
 
         "about-desc-1": "I am a graduate student in Full-Stack Development and have always been passionate about technology. My strongest area is Frontend development, primarily working with Angular, but I am still expanding my Backend knowledge by studying Spring Boot, Node.js and MongoDB.",
@@ -183,6 +187,7 @@ export const traducoes = {
 }
 
 const langSwitch = document.getElementById("lang-switch");
+const cvLink = document.querySelector('[data-i18n="download"]');
 export let linguaAtual = localStorage.getItem("language") || "pt";
 
 function traducaoPagina(language) {
@@ -211,6 +216,11 @@ function traducaoPagina(language) {
 
     document.documentElement.lang = language === "pt" ? "pt-BR" : "en";
     langSwitch.textContent = language === "pt" ? "EN" : "PT";
+
+    if(cvLink) {
+        cvLink.href = language === "pt" ? "./arquivos/curriculo-pt.pdf" : "./arquivos/curriculo-en.pdf";
+    }
+
     localStorage.setItem("language", language);
 }
 

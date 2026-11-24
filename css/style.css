@@ -126,6 +126,10 @@ section li {
     background: #F4000C;
 }
 
+.main-container div .btn {
+    margin-bottom: 3vh;
+}
+
 @media screen and (max-width: 960px) {
     .formacao-container {
         flex-direction: column;
