@@ -24,10 +24,14 @@ export const traducoes = {
         "fe-skill-exp-6": "Básico",
 
         "field-title-2": "Desenvolvimento Backend",
-        "be-skill-exp-1": "Intermediário",
-        "be-skill-exp-2": "Básico",
-        "be-skill-exp-3": "Básico",
-        "be-skill-exp-4": "Básico",
+        "be-skill-exp-1": "Básico",
+        
+        "field-title-3": "Banco de Dados",
+        "db-skill-exp-1": "Intermediário",
+        "db-skill-exp-2": "Básico",
+        
+        "field-title-4": "Ferramentas",
+        "to-skill-exp-1": "Básico",
 
         "education-title": "Formação",
         
@@ -117,10 +121,14 @@ export const traducoes = {
         "fe-skill-exp-6": "Basic",
 
         "field-title-2": "Backend Development",
-        "be-skill-exp-1": "Intermediate",
-        "be-skill-exp-2": "Basic",
-        "be-skill-exp-3": "Basic",
-        "be-skill-exp-4": "Basic",
+        "be-skill-exp-1": "Basic",
+        
+        "field-title-3": "Database",
+        "db-skill-exp-1": "Intermediate",
+        "db-skill-exp-2": "Basic",
+        
+        "field-title-4": "Tools",
+        "to-skill-exp-1": "Basic",
 
         "education-title": "Education",
         

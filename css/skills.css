@@ -1,3 +1,7 @@
+.skills {
+    margin-bottom: 3rem;
+}
+
 .skill-container {
     display: flex;
     flex-direction: column;
@@ -8,20 +12,21 @@
 
 .field-container {
     padding: 1.5rem;
-    flex: 1;
     border-radius: 2rem;
     border: 0.1rem solid #d7263d;
     text-align: center;
-    margin: 1rem;
+    margin: 0;
     transition: 0.2s;
     box-shadow: 6px 6px 3px rgb(27,30,35);
+    min-width: 0;
 }
 
 .field-group {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    gap: 2rem;
 }
 
 .field-container:hover {
@@ -86,7 +91,7 @@
 
 @media screen and (max-width: 700px){
     .field-group {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .field-skills {
