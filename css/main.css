@@ -66,6 +66,10 @@
     font-size: 3rem;
 }
 
+.main .main-container div .btn {
+    margin-bottom: 3vh;
+}
+
 .main .main-container div .redes {
     display: flex;
     flex-direction: row;
@@ -120,6 +124,10 @@
         max-width: 100%;
         font-size: clamp(1.5rem, 5vw, 2.5rem);
         text-align: center;
+    }
+
+    .main .main-container div .btn {
+        margin-bottom: 0;
     }
 }
 
